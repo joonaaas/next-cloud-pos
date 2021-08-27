@@ -18,12 +18,12 @@ export default function Home() {
 				/>
 			</Head>
 
-			<main className='flex flex-1 w-full px-8 h-[90%] fixed top-0'>
+			<main className='flex flex-1 w-full h-[90%] fixed top-0'>
 				<LayoutRight />
 				<LayoutLeft />
 			</main>
 
-			<footer className='flex items-center justify-between px-8 border-[#2A2A2A] border-t fixed bottom-0 right-0 left-0 bg-[#181818] h-[10%] w-screen'>
+			<footer className='flex items-center justify-between px-6 border-[#2A2A2A] border-t fixed bottom-0 right-0 left-0 bg-[#181818] h-[10%] w-screen'>
 				<button className='flex items-center justify-center space-x-4'>
 					<Image src='/svg/icon-hamburger.svg' height='30' width='40' />
 					<div>Home</div>

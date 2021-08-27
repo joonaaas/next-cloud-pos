@@ -1,9 +1,10 @@
 import BaseButton from './BaseButton';
+import ListItem from './ListItem';
 
 const LayoutLeft = () => {
 	return (
-		<aside className='w-[30%] h-full pl-8 pt-4 '>
-			<div className='grid grid-cols-2 gap-2'>
+		<aside className='w-[30%] h-full pt-4 flex flex-col'>
+			<div className='grid grid-cols-2 gap-2 px-6 pb-4 border-[#2A2A2A] border-b'>
 				<BaseButton
 					textContent='Remove'
 					bgColor='#181818'
@@ -16,6 +17,15 @@ const LayoutLeft = () => {
 					borColor='#323232'
 					textColor='#FFFFFF'
 				/>
+			</div>
+			<div className='px-6 overflow-y-auto'>
+				<ul>
+					<ListItem />
+					<ListItem />
+					<ListItem />
+					<ListItem />
+					<ListItem />
+				</ul>
 			</div>
 		</aside>
 	);
